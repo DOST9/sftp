@@ -16,8 +16,13 @@
 
 	<script type="text/javascript">
 		$(function() {
+
+            //alert(window.innerHeight);
 		    //single book
-		    $('#mybook').booklet();
+		    $('#mybook').booklet({
+                width:  '850',
+                height: '100%'
+            });
 
 		    //multiple books with ID's
 		    //$('#mybook1, #mybook2').booklet();
@@ -29,32 +34,19 @@
 </head>
 <body>
 <div id="mybook">
-	<div>
-        
-    </div>
+    
     <div>
-        <h3>Yay, Page 1!</h3>
-        <img src="images/p0.jpg" alt="" width="100%" height="100%">
+        <img src="images/cover.jpg" alt="" width="100%" height="100%">
     </div>
+    <?php for($x=1; $x<=62; $x++)
+        {
+            echo '<div>
+                <img src="images/'.$x.'.jpg" alt="" width="100%" height="100%">
+            </div>';
+        }
+    ?>
     <div>
-        <h3>Yay, Page 2!</h3>
-        <img src="images/p1.jpg" alt="" width="100%" height="100%">
-    </div>
-    <div>
-        <h3>Yay, Page 3!</h3>
-        <img src="images/p2.jpg" alt="" width="100%" height="100%">
-    </div>
-    <div>
-        <h3>Yay, Page 4!</h3>
-        <img src="images/p3.jpg" alt="" width="100%" height="100%">
-    </div>
-    <div>
-        <h3>Yay, Page 4!</h3>
-        <img src="images/p4.jpg" alt="" width="100%" height="100%">
-    </div>
-    <div>
-        <h3>Yay, Page 4!</h3>
-        <img src="images/p5.jpg" alt="" width="100%" height="100%">
+        <img src="images/back.jpg" alt="" width="100%" height="100%">
     </div>
 </div>
 
