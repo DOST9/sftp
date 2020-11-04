@@ -20,8 +20,8 @@
             //alert(window.innerHeight);
 		    //single book
 		    $('#mybook').booklet({
-                width:  '850',
-                height: '100%'
+                width:  '1200',
+                height: '122%'
             });
 
 		    //multiple books with ID's
@@ -35,9 +35,9 @@
 <body>
 <div id="mybook">
     
-    <div>
+    <!-- <div>
         <img src="images/cover.jpg" alt="" width="100%" height="100%">
-    </div>
+    </div> -->
 
     <?php for($x=1; $x<=62; $x++)
         {
