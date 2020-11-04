@@ -38,6 +38,7 @@
     <div>
         <img src="images/cover.jpg" alt="" width="100%" height="100%">
     </div>
+
     <?php for($x=1; $x<=62; $x++)
         {
             echo '<div>
@@ -45,6 +46,7 @@
             </div>';
         }
     ?>
+
     <div>
         <img src="images/back.jpg" alt="" width="100%" height="100%">
     </div>
